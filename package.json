@@ -1,0 +1,23 @@
+{
+  "name": "progresspilot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@notionhq/client": "^2.2.3",
+    "dotenv": "^16.6.1",
+    "elevenlabs": "^1.59.0",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^8.0.10"
+  }
+}

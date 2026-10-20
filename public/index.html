@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+      <title>ProgressPilot</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      </head>
+    <body>
+      <div class="header">
+        <div class="avatar">🚀</div>
+        <div class="header-info">
+          <h2>ProgressPilot</h2>
+          <p>Your personal AI mentor</p>
+        </div>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="welcome">Today · ProgressPilot</div>
+        <div class="message agent">
+          <div class="bubble">Hey Vasil 👋 How was your day? Fill in your stats and tell me what you worked on.</div>
+          <div class="timestamp">now</div>
+        </div>
+      </div>
+
+      <div class="input-area">
+  <div id="checkin-mode">
+    <div class="stats-row">
+      <input class="stat-input" id="hours" type="number" placeholder="⏱ Hours" min="0" max="24">
+      <input class="stat-input" id="energy" type="number" placeholder="⚡ Energy (1-10)" min="1" max="10">
+    </div>
+  </div>
+  <div class="mode-toggle" style="display:flex; gap:8px; margin-bottom:10px;">
+    <button type="button" onclick="setMode('checkin')" id="btn-checkin" style="flex:1; padding:8px; background:#0a84ff; border:none; border-radius:10px; color:white; font-size:13px; cursor:pointer;">📋 Check In</button>
+   <button type="button" onclick="setMode('chat')" id="btn-chat" style="flex:1; padding:8px; background:#2c2c2e; border:none; border-radius:10px; color:white; font-size:13px; cursor:pointer;">💬 Chat</button>
+  </div>
+  <div class="message-row">
+    <textarea class="message-input" id="checkin" placeholder="What did you work on today?" rows="1"></textarea>
+    <button class="send-btn" onclick="submitMessage()">
+      <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+    </button>
+  </div>
+</div>
+
+     <script src="app.js"></script>
+    </body>
+    </html>
